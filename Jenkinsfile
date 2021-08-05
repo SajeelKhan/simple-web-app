@@ -12,17 +12,6 @@ pipeline {
                 //sh 'npm install'
             }
         }
-        stage('Test') {
-            steps {
-                echo 'Testing Stage'
-                //sh 'npm run test: integration'
-            }
-        }
-        stage('Integration') {
-            steps {
-                echo 'Integration Stage'
-                //sh cp . /var/www/
-            }
-        }
+        
     }
 }
