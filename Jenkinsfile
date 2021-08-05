@@ -21,7 +21,7 @@ pipeline {
         stage('Integration') {
             steps {
                 echo 'Integration Stage'
-                sh cp . /var/www/
+                sh cp . /var/www
             }
         }
     }
