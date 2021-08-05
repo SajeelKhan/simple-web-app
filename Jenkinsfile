@@ -9,19 +9,19 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building Stage'
-                sh 'npm install'
+                //sh 'npm install'
             }
         }
         stage('Test') {
             steps {
                 echo 'Testing Stage'
-                sh 'npm run test: integration'
+                //sh 'npm run test: integration'
             }
         }
         stage('Integration') {
             steps {
                 echo 'Integration Stage'
-                sh cp . /var/www/
+                //sh cp . /var/www/
             }
         }
     }
