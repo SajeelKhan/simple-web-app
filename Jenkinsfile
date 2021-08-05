@@ -1,28 +1,22 @@
-pipeline {
-    agent any
-
-    tools{
-        nodejs 'node-16'
-    }
-
-    stages {
-        stage('Build') {
+pipeline { 
+agent any 
+    stages { 
+        stage ('Build') { 
             steps {
-                echo 'Building Stage'
-                sh 'npm install'
+                echo 'This is Build stage'
             }
+ 
         }
-        stage('Test') {
+        stage ('Test') { 
             steps {
-                echo 'Testing Stage'
-                sh 'npm run test: integration'
+                echo 'This is Test stage'
             }
+        
         }
-        stage('Integration') {
-            steps {
-                echo 'Integration Stage'
-                sh cp . /var/www/
+        stage ('Deploy') { 
+            steps{
+                echo 'This is Deploy stage'
             }
-        }
-    }
-}
+        }         
+    }           
+ }
