@@ -16,6 +16,7 @@ agent any
         stage ('Test') { 
             steps {
                 echo 'This is Test stage'
+                sh 'npm run test:integration'
             }
         
         }
