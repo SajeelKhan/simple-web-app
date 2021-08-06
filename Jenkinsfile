@@ -9,7 +9,7 @@ agent any
         stage ('Build') { 
             steps {
                 echo 'This is Build stage'
-                bash 'npm install'
+                sh 'npm install'
             }
  
         }
